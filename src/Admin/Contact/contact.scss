@@ -1,0 +1,115 @@
+.contact {
+    display: flex;
+
+    .contactContainer {
+        flex: 6;
+        transition: margin-left 0.3s ease;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+        &.open {
+            margin-left: 250px;
+        }
+
+        .table {
+            text-align: center;
+
+        }
+
+        .pagination {
+            justify-content: center;
+        }
+
+                /* Styles for UserList */
+                .user-list {
+                    padding: 20px;
+                    background-color: #f8f9fa;
+                    height: 100%;
+                    overflow-y: auto;
+                }
+        
+                .user-list .list-group-item {
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+        
+                .user-list .list-group-item:hover {
+                    background-color: #e9ecef;
+                }
+        
+                /* Styles for Chat */
+                .chat {
+                    padding: 20px;
+                    height: 100%;
+                    overflow-y: auto;
+                }
+        
+                .chat .message {
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+        
+                .chat .message.user {
+                    background-color: #007bff;
+                    color: #fff;
+                }
+        
+                .chat .message.admin {
+                    background-color: #28a745;
+                    color: #fff;
+                }
+        
+                .chat .message .content {
+                    font-size: 14px;
+                }
+        
+                .chat .message.user .content {
+                    text-align: right;
+                }
+        
+                .chat .message.admin .content {
+                    text-align: left;
+                }
+        
+                .chat .message .sender {
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+        
+                .chat .message.user .sender {
+                    text-align: right;
+                }
+        
+                .chat .message.admin .sender {
+                    text-align: left;
+                }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .contactContainer {
+        margin-left: 0;
+
+        &.open {
+            margin-left: 0;
+        }
+    }
+
+    .sidebar {
+        width: 250px;
+    }
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}

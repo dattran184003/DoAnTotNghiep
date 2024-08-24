@@ -1,0 +1,175 @@
+/* Dark Theme */
+.app.dark {
+  background-color: #111;
+  color: rgb(156, 156, 156);
+
+  .chartGrid {
+    stroke: rgba(228, 228, 228, 0.219);
+  }
+
+  .table {
+    background-color: #111;
+
+    .tableCell {
+      color: white;
+    }
+  }
+
+  .navbar {
+    color: #999;
+    border-color: #333;
+
+    .search {
+      border-color: gray;
+    }
+  }
+
+  .sidebar {
+    background-color: #111;
+    border-color: #333;
+
+    .top {
+      .logo {
+        color: #999;
+      }
+    }
+
+    hr {
+      border-color: #333;
+    }
+
+    ul {
+      li {
+        &:hover {
+          background-color: #333;
+        }
+
+        .icon {
+          color: #999;
+        }
+      }
+    }
+  }
+
+  .datatable {
+    .datagrid {
+      color: gray;
+      border: none;
+
+      .viewButton,
+      .deleteButton,
+      .cellWithStatus {
+        color: gray;
+        border: none;
+      }
+    }
+  }
+
+  input {
+    background-color: transparent;
+    color: white;
+  }
+
+  form {
+    color: white;
+
+    input,
+    textarea,
+    select {
+      background-color: transparent;
+      color: white;
+    }
+
+    label {
+      color: white;
+    }
+  }
+}
+
+/* Light Theme */
+.app.light {
+  background-color: white;
+  color: black;
+
+  .chartGrid {
+    stroke: rgba(0, 0, 0, 0.1);
+  }
+
+  .table {
+    background-color: white;
+
+    .tableCell {
+      color: black;
+    }
+  }
+
+  .navbar {
+    color: black;
+    border-color: #ddd;
+
+    .search {
+      border-color: #ccc;
+    }
+  }
+
+  .sidebar {
+    background-color: white;
+    border-color: #ddd;
+
+    .top {
+      .logo {
+        color: black;
+      }
+    }
+
+    hr {
+      border-color: #ddd;
+    }
+
+    ul {
+      li {
+        &:hover {
+          background-color: #f5f5f5;
+        }
+
+        .icon {
+          color: black;
+        }
+      }
+    }
+  }
+
+  .datatable {
+    .datagrid {
+      color: black;
+      border: none;
+
+      .viewButton,
+      .deleteButton,
+      .cellWithStatus {
+        color: black;
+        border: none;
+      }
+    }
+  }
+
+  input {
+    background-color: white;
+    color: black;
+  }
+
+  form {
+    color: black;
+
+    input,
+    textarea,
+    select {
+      background-color: white;
+      color: black;
+    }
+
+    label {
+      color: black;
+    }
+  }
+}
